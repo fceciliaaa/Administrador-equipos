@@ -1,0 +1,95 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+button.btn-eliminar {
+  background-color: #ee5a4f;
+  color: white;
+}
+
+button.btn-eliminar:hover {
+  background-color: #d32f2f; 
+}
+
+button.btn-crear {
+  background-color:#1080f7;
+  color: white;
+}
+
+button.btn-crear:hover {
+  background-color: #0056b3;
+}
+
+form{
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: 1px solid #2135477a;
+}
+
+.tabla-jugadores {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.tabla-jugadores th, .tabla-jugadores td {
+  padding: 12px 15px;
+  border: 1px solid #2135477a;
+}
+
+.tabla-jugadores th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
